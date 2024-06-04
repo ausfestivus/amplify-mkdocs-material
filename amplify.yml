@@ -8,12 +8,13 @@ frontend:
         - python3 -m pip install mkdocs-material
         - python3 -m pip show mkdocs-material
         - python3 -m pip show mkdocs
+        - python3 -m site --user-base
         - env
     build:
       commands:
-        - pwd
-        - ls -la
-        - ls -la /root/.pyenv/versions/3.10.13/lib/python3.10/site-packages/mkdocs
+        # - pwd
+        # - ls -la
+        # - ls -la /root/.pyenv/versions/3.10.13/lib/python3.10/site-packages/mkdocs
         - /root/.pyenv/versions/3.10.13/lib/python3.10/site-packages/mkdocs build
   artifacts:
     # IMPORTANT - Please verify your build output directory
