@@ -4,10 +4,13 @@ frontend:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
+        - python3 -m pip install --upgrade pip
         - python3 -m pip install mkdocs-material
     build:
       commands:
-        - /usr/local/bin/mkdocs build
+        - updatedb
+        - locate mkdocs
+        #- /usr/local/bin/mkdocs build
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: site
