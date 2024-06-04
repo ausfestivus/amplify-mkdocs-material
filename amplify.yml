@@ -15,9 +15,9 @@ frontend:
         # - pwd
         # - ls -la
         # - ls -la /root/.pyenv/versions/3.10.13/lib/python3.10/site-packages/mkdocs
-        - cd /root/.local
+        - cd /root/.local/share
         - ls -la
-        - /root/.local/mkdocs build
+        - /root/.local/share/mkdocs build
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: site
