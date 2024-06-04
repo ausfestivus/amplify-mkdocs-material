@@ -6,11 +6,11 @@ frontend:
       commands:
         - python3 -m pip install --upgrade pip
         - python3 -m pip install mkdocs-material
+        - python3 -m pip show mkdocs-material
+        - python3 -m pip show mkdocs
     build:
       commands:
-        - updatedb
-        - locate mkdocs
-        #- /usr/local/bin/mkdocs build
+        - /usr/local/bin/mkdocs build
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: site
