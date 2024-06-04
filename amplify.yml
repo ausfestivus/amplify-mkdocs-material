@@ -15,7 +15,7 @@ frontend:
         # - pwd
         # - ls -la
         # - ls -la /root/.pyenv/versions/3.10.13/lib/python3.10/site-packages/mkdocs
-        - cd /root/.local/share/gem
+        - cd /root/.local/share/gem/specs
         - ls -la
         #- /root/.local/share/mkdocs build
   artifacts:
