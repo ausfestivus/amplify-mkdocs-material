@@ -6,8 +6,7 @@ frontend:
       commands:
         - python3 -m pip install pipenv --user
         - python3 -m pip install mkdocs-material
-        - python3 -m site --user-base
-        - env | sort
+        - python3 -m pip install mkdocs-material-extensions
     build:
       commands:
         - /root/.pyenv/versions/3.10.13/bin/mkdocs build
