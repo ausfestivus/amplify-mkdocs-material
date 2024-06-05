@@ -10,6 +10,8 @@ docs_dir: "docs"
 theme:
   name: "material"
   language: "en"
+  icon:
+    repo: fontawesome/brands/github
   shortcuts:
     help: 191 # ?
     next: 78 # n
