@@ -4,19 +4,18 @@ frontend:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
-        - python3 -m pip install --upgrade pip
+        - python3 -m pip install pipenv --user
         - python3 -m pip install mkdocs-material
         #- python3 -m pip show mkdocs-material
         #- python3 -m pip show mkdocs
-        - python3 -m site --user-base
+        #- python3 -m site --user-base
         #- env
     build:
       commands:
         # - pwd
         # - ls -la
         # - ls -la /root/.pyenv/versions/3.10.13/lib/python3.10/site-packages/mkdocs
-        - cd /root/.local/share/gem/specs
-        - ls -la
+        - find / -name mkdocs
         #- /root/.local/share/mkdocs build
   artifacts:
     # IMPORTANT - Please verify your build output directory
