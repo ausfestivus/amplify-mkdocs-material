@@ -6,17 +6,11 @@ frontend:
       commands:
         - python3 -m pip install pipenv --user
         - python3 -m pip install mkdocs-material
-        #- python3 -m pip show mkdocs-material
-        #- python3 -m pip show mkdocs
-        #- python3 -m site --user-base
-        #- env
+        - python3 -m site --user-base
+        - env | sort
     build:
       commands:
-        # - pwd
-        # - ls -la
-        # - ls -la /root/.pyenv/versions/3.10.13/lib/python3.10/site-packages/mkdocs
-        - find / -name mkdocs
-        #- /root/.local/share/mkdocs build
+        - /root/.pyenv/versions/3.10.13/bin/mkdocs build
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: site
