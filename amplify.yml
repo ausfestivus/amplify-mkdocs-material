@@ -1,0 +1,20 @@
+version: 1.0
+frontend:
+  phases:
+    # IMPORTANT - Please verify your build commands
+    preBuild:
+      commands:
+        - python3 -m pip install pipenv --user
+        - python3 -m pip install mkdocs-material
+        - python3 -m pip install mkdocs-material-extensions
+        - python3 -m pip install python-markdown-math
+    build:
+      commands:
+        - /root/.pyenv/versions/3.10.13/bin/mkdocs build
+  artifacts:
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: site
+    files:
+      - '**/*'
+  cache:
+    paths: []
